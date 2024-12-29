@@ -8,11 +8,7 @@ const PORT = 8001
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-app.use(cors({
-    origin:["https://safwanspehere.online", "http://localhost:3000"],
-    methods:"GET,PUT,POST,DELETE",
-    credentials: true
-}))
+app.use(cors())
 
 app.use('/', require('./routes/router'))
 
