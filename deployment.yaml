@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: cloud-mailing
-          image: registry.digitalocean.com/cloud-aat/mailing:1.0.1
+          image: registry.digitalocean.com/cloud-aat/mailing:1.0.0
           ports:
           - containerPort: 8000
