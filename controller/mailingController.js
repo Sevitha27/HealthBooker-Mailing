@@ -1,5 +1,5 @@
 const path = require('path')
-const { transporter, mailOptionsReceiving, mailOptionsSending } = require('../Config/nodemailer')
+const { transporter, mailOptionsReceiving, mailOptionsSending } = require('../config/nodemailer')
 const ejs = require('ejs')
 
 const templateSender = (data, fileName) => {
