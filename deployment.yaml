@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mailing-deploy
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: cloud-mailing
+  template:
+    metadata:
+      labels:
+        app: cloud-mailing
+    spec:
+      containers:
+        - name: cloud-mailing
+          image: registry.digitalocean.com/cloud-aat/mailing:1.0.1
+          ports:
+          - containerPort: 8000
